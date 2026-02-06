@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project automates the process of logging study hours to maintain consistency in my DevOps learning journey. Instead of manual entry, this system extracts data from the [Super Productivity app](https://github.com/super-productivity/super-productivity), transforms it using Linux command-line tools, and synchronizes it with a Google Spreadsheet via a custom Apps Script API.
+This project was born out of a need to automate the tracking of my studying hours. Instead of manual logging, this system extracts data from the [Super Productivity app](https://github.com/super-productivity/super-productivity), processes it using Linux command-line tools, and synchronizes it with a Google Spreadsheet via a custom API.
 
 **Final Result in Google Sheets:**
 
