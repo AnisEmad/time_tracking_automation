@@ -40,3 +40,30 @@ This project was born out of a need to automate the tracking of my studying hour
     - check.sh verifies the last_success.log to see if a sync is required.
 
     - tracker.sh sends the formatted data to the Google Sheets API via curl.
+
+## Getting Started
+
+### Prerequisites
+Ensure you have the following tools installed on your Linux system:
+```bash
+sudo apt install jq bc curl
+```
+
+### Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/AnisEmad/time_tracking_automation.git
+cd time_tracking_automation
+```
+2. Configuration:
+ - Create a `.env' file from the example:
+```bash
+cp .env.example .env
+```
+- Add your Google Apps Script URL to the .env file.
+3. Set up Automation:
+- Add the following to your `crontab -e` to ensure the script checks for missing syncs every time you boot:
+
+```bash
+@reboot /path/to/your/folder/check.sh
+```
