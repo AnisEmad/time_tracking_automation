@@ -53,13 +53,15 @@ function doGet(e) {
   // 4. Send confirmation back to terminal
   return ContentService.createTextOutput("Success: Row added to Spreadsheet!");
 }
+```
+
 # Deployment Configuration
 
 When deploying, ensure the access is set to **"Anyone"** to allow the curl request to execute successfully.
 
 ---
 
-# 🚀 Getting Started
+# Getting Started
 
 ## Prerequisites
 
